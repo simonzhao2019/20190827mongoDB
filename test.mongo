@@ -1,0 +1,7 @@
+db.users.insert({name: 'simon', password: '123', age: 20})
+db.users.insert([
+{name: 'jack', password: 'abc', age: 17}, 
+{name: 'bob', password: 'cba', age: 20}
+])
+db.users.update( {age: {$lt: 20}}, {$set: {name: 'atguigu'}} )
+db.users.remove({age:{$lt:20}})
